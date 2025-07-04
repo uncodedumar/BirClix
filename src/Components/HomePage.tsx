@@ -1,10 +1,8 @@
-import React from "react";
-
 export default function LandingPage() {
   return (
     <>
-      <nav className="bg-neutral-900	 text-white py-3 px-4 flex items-center justify-between sticky top-0 z-50 bg-black shadow-md">
-        <a className="font-bold text-xl tracking-tight" href="#">
+      <nav className="bg-grey-950	 text-white py-3 px-4 flex items-center justify-between sticky top-0 z-50 bg-stone-800 shadow-md">
+        <a className="font-bold text-xl tracking-tight" href="#Home">
           <img
             src="Artboard1-Cropped.png"
             alt="Cool Image"
@@ -14,7 +12,7 @@ export default function LandingPage() {
         <div className="flex items-center">
           <a
             className="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700 font-bold font-raleway"
-            href="#"
+            href="#Home"
           >
             Home
           </a>
@@ -27,24 +25,27 @@ export default function LandingPage() {
           </a>
           <a
             className="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700 font-bold font-raleway"
-            href="#"
+            href="#courses"
           >
             Courses
           </a>
           <a
             className="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700 font-bold"
-            href="#"
+            href="#reviews"
           >
             Testimonials
           </a>
         </div>
       </nav>
 
-      <section className="bg-white dark:bg-neutral-900	">
+      <section
+        className="bg-[url('/hero.png')] bg-cover bg-center bg-no-repeat bg-white dark:bg-neutral-900"
+        id="Home"
+      >
         <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
           <a
             href="#"
-            className="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-900	"
+            className="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-zinc-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-900	"
             role="alert"
           >
             <span className="text-xs bg-primary-600 rounded-full text-white px-4 py-1.5 mr-3">
@@ -83,7 +84,7 @@ export default function LandingPage() {
             </a>
 
             <a
-              href="#"
+              href="https://www.youtube.com/@Birclix1"
               className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-red-600 dark:focus:ring-gray-800"
             >
               <svg
@@ -104,7 +105,7 @@ export default function LandingPage() {
             </span>
             <div className="flex flex-wrap justify-center items-center mt-8 text-gray-500 sm:justify-between">
               <a
-                href="#"
+                href="https://www.instagram.com/birclix/"
                 className="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400"
               >
                 <svg
@@ -118,7 +119,7 @@ export default function LandingPage() {
                 </svg>
               </a>
               <a
-                href="#"
+                href="linkedin/in/birclix"
                 className="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400"
               >
                 <svg
@@ -133,7 +134,7 @@ export default function LandingPage() {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://www.youtube.com/@Birclix1"
                 className="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400"
               >
                 <svg
@@ -150,14 +151,14 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
+      <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16" id="courses">
         <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl text-center py-8 px-4">
           Our Courses
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
           <div className="rounded overflow-hidden shadow-lg">
             <div className="relative">
-              <a href="#">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe6QqQ6FJRoqzW4DN9R2AwIvS1oPDJuR9SNH5yrxcC2SKTJIw/viewform?usp=header">
                 <img
                   className="w-full h-60 object-cover object-center"
                   src="ai.webp"
@@ -171,7 +172,7 @@ export default function LandingPage() {
             </div>
             <div className="px-6 py-4">
               <a
-                href="#"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSe6QqQ6FJRoqzW4DN9R2AwIvS1oPDJuR9SNH5yrxcC2SKTJIw/viewform?usp=header"
                 className="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out"
               >
                 AI Engineer Bootcamp
@@ -186,14 +187,16 @@ export default function LandingPage() {
                 type="button"
                 className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-slate-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
-                Explore
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe6QqQ6FJRoqzW4DN9R2AwIvS1oPDJuR9SNH5yrxcC2SKTJIw/viewform?usp=header">
+                  Explore
+                </a>
               </button>
             </div>
           </div>
 
           <div className="rounded overflow-hidden shadow-lg">
             <div className="relative">
-              <a href="#">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfnDZTnt8Jgn2BXWWPMsXFe-H7U6psZpE9OpDAOrcDfsAKLxw/viewform?usp=header">
                 <img
                   className="w-full h-60 object-cover object-center"
                   src="garphic.webp"
@@ -207,7 +210,7 @@ export default function LandingPage() {
             </div>
             <div className="px-6 py-4">
               <a
-                href="#"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfnDZTnt8Jgn2BXWWPMsXFe-H7U6psZpE9OpDAOrcDfsAKLxw/viewform?usp=header"
                 className="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out"
               >
                 Visual Design Bootcamp
@@ -222,13 +225,15 @@ export default function LandingPage() {
                 type="button"
                 className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-slate-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
-                Explore
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfnDZTnt8Jgn2BXWWPMsXFe-H7U6psZpE9OpDAOrcDfsAKLxw/viewform?usp=header">
+                  Explore
+                </a>
               </button>
             </div>
           </div>
           <div className="rounded overflow-hidden shadow-lg">
             <div className="relative">
-              <a href="#">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScfUb8ze--pnknzeTZ4SbqC2YUV_9AxCZV-3T7BTxMJSo0UUw/viewform?usp=header">
                 <img
                   className="w-full h-60 object-cover object-center"
                   src="uiux.webp"
@@ -242,7 +247,7 @@ export default function LandingPage() {
             </div>
             <div className="px-6 py-4">
               <a
-                href="#"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScfUb8ze--pnknzeTZ4SbqC2YUV_9AxCZV-3T7BTxMJSo0UUw/viewform?usp=header"
                 className="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out"
               >
                 UI/UX Design Mastery
@@ -257,13 +262,15 @@ export default function LandingPage() {
                 type="button"
                 className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-slate-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
-                Explore
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScfUb8ze--pnknzeTZ4SbqC2YUV_9AxCZV-3T7BTxMJSo0UUw/viewform?usp=header">
+                  Explore
+                </a>
               </button>
             </div>
           </div>
           <div className="rounded overflow-hidden shadow-lg">
             <div className="relative">
-              <a href="#">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfnDZTnt8Jgn2BXWWPMsXFe-H7U6psZpE9OpDAOrcDfsAKLxw/viewform?usp=header">
                 <img
                   className="w-full h-60 object-cover object-center"
                   src="photoshop.jpg"
@@ -277,7 +284,7 @@ export default function LandingPage() {
             </div>
             <div className="px-6 py-4">
               <a
-                href="#"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfnDZTnt8Jgn2BXWWPMsXFe-H7U6psZpE9OpDAOrcDfsAKLxw/viewform?usp=header"
                 className="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out"
               >
                 Adobe Photoshop Mastery
@@ -293,13 +300,15 @@ export default function LandingPage() {
                 type="button"
                 className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-slate-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
-                Explore
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfnDZTnt8Jgn2BXWWPMsXFe-H7U6psZpE9OpDAOrcDfsAKLxw/viewform?usp=header">
+                  Explore
+                </a>
               </button>
             </div>
           </div>
           <div className="rounded overflow-hidden shadow-lg">
             <div className="relative">
-              <a href="#">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfnDZTnt8Jgn2BXWWPMsXFe-H7U6psZpE9OpDAOrcDfsAKLxw/viewform?usp=header">
                 <img
                   className="w-full h-60 object-cover object-center"
                   src="illustrator.webp"
@@ -313,7 +322,7 @@ export default function LandingPage() {
             </div>
             <div className="px-6 py-4">
               <a
-                href="#"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfnDZTnt8Jgn2BXWWPMsXFe-H7U6psZpE9OpDAOrcDfsAKLxw/viewform?usp=header"
                 className="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out"
               >
                 Adobe Illustrator Mastery
@@ -328,13 +337,15 @@ export default function LandingPage() {
                 type="button"
                 className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-slate-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
-                Explore
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfnDZTnt8Jgn2BXWWPMsXFe-H7U6psZpE9OpDAOrcDfsAKLxw/viewform?usp=header">
+                  Explore
+                </a>
               </button>
             </div>
           </div>
           <div className="rounded overflow-hidden shadow-lg">
             <div className="relative">
-              <a href="#">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScfUb8ze--pnknzeTZ4SbqC2YUV_9AxCZV-3T7BTxMJSo0UUw/viewform?usp=header">
                 <img
                   className="w-full h-60 object-cover object-center"
                   src="figma.jpg"
@@ -343,12 +354,12 @@ export default function LandingPage() {
                 <div className="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25"></div>
               </a>
               <div className="absolute bottom-0 left-0 bg-amber-600 px-4 py-2 text-white text-sm hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
-                0.2 Months
+                1 Months
               </div>
             </div>
             <div className="px-6 py-4">
               <a
-                href="#"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScfUb8ze--pnknzeTZ4SbqC2YUV_9AxCZV-3T7BTxMJSo0UUw/viewform?usp=header"
                 className="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out"
               >
                 Figma Masterclass
@@ -363,20 +374,22 @@ export default function LandingPage() {
                 type="button"
                 className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-slate-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
-                Explore
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScfUb8ze--pnknzeTZ4SbqC2YUV_9AxCZV-3T7BTxMJSo0UUw/viewform?usp=header">
+                  Explore
+                </a>
               </button>
             </div>
           </div>
         </div>
       </div>
 
-      <h1 className="text-4xl font-extrabold text-stone-50 tracking-tight sm:text-5xl text-center pt-10 px-4  bg-slate-800">
+      <h1 className="text-4xl font-extrabold text-stone-50 tracking-tight sm:text-5xl text-center pt-10 px-4  bg-zinc-900">
         Our Services
       </h1>
 
       <ul
         id="services"
-        className="grid grid-cols-1 xl:grid-cols-3 gap-y-10 gap-x-6 items-start p-8 py-8 bg-slate-800"
+        className="grid grid-cols-1 xl:grid-cols-3 gap-y-10 gap-x-6 items-start p-8 py-8 bg-zinc-900"
       >
         <li className="relative flex flex-col sm:flex-row xl:flex-col items-start">
           <div className="order-1 sm:ml-6 xl:ml-0  ">
@@ -396,7 +409,7 @@ export default function LandingPage() {
             </div>
             <a
               className="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500 mt-6"
-              href=""
+              href="tel:+92388123733"
             >
               Let’s Build the Future Together
               <svg
@@ -438,7 +451,7 @@ export default function LandingPage() {
             </div>
             <a
               className="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500 mt-6"
-              href=""
+              href="tel:+92388123733"
             >
               Let’s Design Something Unforgettable
               <svg
@@ -479,7 +492,7 @@ export default function LandingPage() {
             </div>
             <a
               className="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500 mt-6"
-              href=""
+              href="tel:+92388123733"
             >
               Get Custom Graphics That Convert
               <svg
@@ -566,7 +579,9 @@ export default function LandingPage() {
             >
               <path d="M8.824 7.287c.008 0 .004 0 0 0zm-2.8-1.4c.006 0 .003 0 0 0zm16.754 2.161c-.505-1.215-1.53-2.528-2.333-2.943.654 1.283 1.033 2.57 1.177 3.53l.002.02c-1.314-3.278-3.544-4.6-5.366-7.477-.091-.147-.184-.292-.273-.446a3.545 3.545 0 01-.13-.24 2.118 2.118 0 01-.172-.46.03.03 0 00-.027-.03.038.038 0 00-.021 0l-.006.001a.037.037 0 00-.01.005L15.624 0c-2.585 1.515-3.657 4.168-3.932 5.856a6.197 6.197 0 00-2.305.587.297.297 0 00-.147.37c.057.162.24.24.396.17a5.622 5.622 0 012.008-.523l.067-.005a5.847 5.847 0 011.957.222l.095.03a5.816 5.816 0 01.616.228c.08.036.16.073.238.112l.107.055a5.835 5.835 0 01.368.211 5.953 5.953 0 012.034 2.104c-.62-.437-1.733-.868-2.803-.681 4.183 2.09 3.06 9.292-2.737 9.02a5.164 5.164 0 01-1.513-.292 4.42 4.42 0 01-.538-.232c-1.42-.735-2.593-2.121-2.74-3.806 0 0 .537-2 3.845-2 .357 0 1.38-.998 1.398-1.287-.005-.095-2.029-.9-2.817-1.677-.422-.416-.622-.616-.8-.767a3.47 3.47 0 00-.301-.227 5.388 5.388 0 01-.032-2.842c-1.195.544-2.124 1.403-2.8 2.163h-.006c-.46-.584-.428-2.51-.402-2.913-.006-.025-.343.176-.389.206-.406.29-.787.616-1.136.974-.397.403-.76.839-1.085 1.303a9.816 9.816 0 00-1.562 3.52c-.003.013-.11.487-.19 1.073-.013.09-.026.181-.037.272a7.8 7.8 0 00-.069.667l-.002.034-.023.387-.001.06C.386 18.795 5.593 24 12.016 24c5.752 0 10.527-4.176 11.463-9.661.02-.149.035-.298.052-.448.232-1.994-.025-4.09-.753-5.844z"></path>
             </svg>
-            <span className="ml-3">Call Us + 92 370 735 3730</span>
+            <span className="ml-3">
+              <a href="tel:+92388123733">Call Us + 92 370 735 3730</a>
+            </span>
           </a>
           <div
             className="relative flex flex-1 flex-col items-stretch sm:flex-none"
@@ -595,7 +610,7 @@ export default function LandingPage() {
                 className="mb-3 sm:mb-0 inline-flex items-center justify-center w-full px-8 py-3 text-lg font-bold text-white transition-all duration-200 bg-gray-900 border-2 border-transparent sm:w-auto rounded-xl hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                 role="button"
               >
-                Call + 92 370 735 3730
+                <a href="tel:+92388123733">Call + 92 370 735 3730</a>
               </a>
             </div>
           </div>
@@ -606,7 +621,7 @@ export default function LandingPage() {
       <br />
       <br />
       <br />
-      <div className="py-5 px-5 dark:bg-zinc-800">
+      <div className="py-5 px-5 dark:bg-zinc-900" id="reviews">
         <div className="container flex flex-col items-center justify-center w-full p-6 mx-auto text-center xl:px-0">
           <div className="text-sm font-bold tracking-wider text-indigo-600 uppercase">
             Testimonials
@@ -622,7 +637,7 @@ export default function LandingPage() {
         <div className="container p-6 mx-auto mb-10 xl:px-0">
           <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
             <div className="lg:col-span-2 xl:col-auto">
-              <div className="flex flex-col justify-between w-full h-full px-6 py-6 bg-gray-100 dark:bg-gray-800 md:px-14 rounded-2xl md:py-14 dark:bg-trueGray-800">
+              <div className="flex flex-col justify-between w-full h-full px-6 py-6 bg-gray-100 dark:bg-gray-900 md:px-14 rounded-2xl md:py-14 dark:bg-trueGray-800">
                 <p className="text-2xl leading-normal dark:text-gray-300">
                   The app they designed was a complete{" "}
                   <mark className="mx-1 text-indigo-800 bg-indigo-100 rounded-md ring-indigo-100 ring-4 dark:ring-indigo-900 dark:bg-indigo-900 dark:text-indigo-200">
@@ -647,7 +662,7 @@ export default function LandingPage() {
               </div>
             </div>
             <div className="">
-              <div className="flex flex-col justify-between w-full h-full px-6 py-6 bg-gray-100 dark:bg-gray-800 md:px-14 rounded-2xl md:py-14 dark:bg-trueGray-800">
+              <div className="flex flex-col justify-between w-full h-full px-6 py-6 bg-gray-100 dark:bg-gray-900 md:px-14 rounded-2xl md:py-14 dark:bg-trueGray-800">
                 <p className="text-2xl leading-normal dark:text-gray-300">
                   Working with their team completely transformed{" "}
                   <mark className="mx-1 text-indigo-800 bg-indigo-100 rounded-md ring-indigo-100 ring-4 dark:ring-indigo-900 dark:bg-indigo-900 dark:text-indigo-200">
@@ -672,7 +687,7 @@ export default function LandingPage() {
               </div>
             </div>
             <div className="">
-              <div className="flex flex-col justify-between w-full h-full px-6 py-6 bg-gray-100 dark:bg-gray-800 md:px-14 rounded-2xl md:py-14 dark:bg-trueGray-800">
+              <div className="flex flex-col justify-between w-full h-full px-6 py-6 bg-gray-100 dark:bg-gray-900 md:px-14 rounded-2xl md:py-14 dark:bg-trueGray-800">
                 <p className="text-2xl leading-normal dark:text-gray-300">
                   The AI chatbot completely transformed the way we engage with
                   our customers. From answering FAQs to handling{" "}
